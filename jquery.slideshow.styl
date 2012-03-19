@@ -1,0 +1,64 @@
+@import "nib"
+
+.slideshow
+  background #f8f8f8
+  border-radius 5px
+  box-shadow 0px 1px 5px rgba(black, 0.3)
+  font-family sans-serif
+  list-style none
+  overflow hidden
+  padding 10px 10px 30px
+  position relative
+  user-select none
+  
+  > .slideshow-wrapper
+    border-color #ccc #ddd #ddd #ccc
+    border-style solid
+    border-width 1px
+    height 100%
+    overflow hidden
+    > .slideshow-slides
+      width 10000px
+      > figure
+        display inline-block
+        overflow hidden
+        position relative
+      
+      > figure.current
+        display block
+      
+      // Slide caption.
+      > figure > figcaption
+        absolute bottom 0px left 0px
+        background rgba(black, 0.7)
+        color white
+        font-size 13px
+        padding 7px
+        text-align center
+        right 0px
+  
+  > .slideshow-indices
+    text-align center
+    > li
+      border 1px solid transparent
+      color #555
+      cursor pointer
+      display inline-block
+      font-size 13px
+      margin 3px 2px
+      padding 2px 7px
+      text-shadow 0px 1px 0px white, 0px -1px 1px rgba(black, 0.1)
+      &:hover
+        color #222
+    > li.prev, > li.next
+      font-size 8px
+      relative bottom 2px
+      padding 2px 3px 6px 3px
+    > li.current
+      background linear-gradient(top, #ccc, #ddd)
+      border-color white
+      border-radius 30px
+      box-shadow inset 0px 0px 4px rgba(black, 0.35)
+      color #222
+      font-weight bold
+
