@@ -25,7 +25,7 @@ jQuery(function($) {
                        "</div>")
         , $slides  = $wrapper.children(".slideshow-slides").css("margin-left", 0)
         , $indices = $("<ul/>", {class: "slideshow-indices"})
-        , html     = ["<li class='prev'>◀</li>"];
+        , html     = ["<li class='prev'>&larr;</li>"];
       
       $el.children().detach().appendTo($slides);
       
@@ -33,7 +33,7 @@ jQuery(function($) {
       for (var i = 0; i < slide_count(); i++) {
         html.push("<li class='num'>" + (i + 1) + "</li>");
       }
-      html.push("<li class='next'>▶</li>");
+      html.push("<li class='next'>&rarr;</li>");
       $el
         .append($wrapper)
         .append($indices.html(html.join("")));

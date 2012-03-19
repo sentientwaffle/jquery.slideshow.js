@@ -64,7 +64,7 @@
 }
 .slideshow > .slideshow-indices > li.prev,
 .slideshow > .slideshow-indices > li.next {
-  font-size: 8px;
+  font-weight: bold;
   position: relative;
   bottom: 2px;
   ((null)): 0;
