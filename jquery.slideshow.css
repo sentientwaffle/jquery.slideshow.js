@@ -15,10 +15,6 @@
   -moz-user-select: none;
   user-select: none;
 }
-.slideshow * {
-  margin: 0px;
-  padding: 0px;
-}
 .slideshow > .slideshow-wrapper {
   border-color: #ccc #ddd #ddd #ccc;
   border-style: solid;
@@ -49,6 +45,8 @@
   right: 0px;
 }
 .slideshow > .slideshow-indices {
+  margin: 0px;
+  padding: 0px;
   text-align: center;
 }
 .slideshow > .slideshow-indices > li {
@@ -87,3 +85,4 @@
   color: #222;
   font-weight: bold;
 }
+
